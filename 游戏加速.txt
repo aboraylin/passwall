@@ -1,0 +1,4 @@
+通过Netch软件实现游戏加速功能
+github:https://github.com/NetchX/Netch/releases
+vps选择CN2路线
+XUI安装脚本：bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
