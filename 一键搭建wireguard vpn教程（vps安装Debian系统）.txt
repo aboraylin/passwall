@@ -1,19 +1,13 @@
 一键搭建wireguard vpn教程（vps安装Debian系统）
-更新系统文件
-apt-get update
-安装sudo命令
-apt-get install sudo
-安装UFW（Uncomplicated Firewall，简称 UFW，是 Ubuntu 系统上默认的防火墙组件。）
-apt-get install ufw
+apt-get update //更新系统文件
+apt-get install sudo  //安装sudo命令
+apt-get install ufw  //安装UFW（Uncomplicated Firewall，简称 UFW，是 Ubuntu 系统上默认的防火墙组件）
 下载Wireguard，选择wireguard-amd64-0.5.3.msi，直接安装在Windows操作系统上
-下载脚本
-wget -O wireguard.sh https://get.vpnsetup.net/wg
-安装命令
-sudo bash wireguard.sh
+wget -O wireguard.sh https://get.vpnsetup.net/wg  //下载脚本
+sudo bash wireguard.sh  //安装命令
 一路回车默认
 安装完毕后进入root文件夹下载.conf文件
-释放端口
-ufw allow 51820(此端口为安装时默认，可更改)
-ufw disable(取消防火墙)
+ufw allow 51820  //释放端口(此端口为安装时默认，可更改)
+ufw disable  //取消防火墙
 每一台设备都要单独取得一份.conf文件
 启动Wireguard，导入.conf文件,点击连接即可。
